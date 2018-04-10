@@ -33,7 +33,24 @@ namespace CAP.Apps.PlaceComponentPlus
         {
             foreach (InvDoc item in OpenComps)
             {
+                //Panel oPanel = new Panel();
+                //oPanel.AutoSize = true;
+
+                //PictureBox oPB = new PictureBox();
+                //oPB.Image = item.Thumbnail;
+                //oPB.Size = new Size(150, 150);
+                //oPB.SizeMode = PictureBoxSizeMode.Zoom;
+
+                //Label oLbl = new Label();
+                //oLbl.Text = item.Name;
+
+                //oPanel.Controls.Add(oPB);
+                //oPanel.Controls.Add(oLbl);
+
+                //lb_OpenDocs.Items.Add(oPanel);
+
                 lb_OpenDocs.Items.Add(item.Name);
+
             }
         }
 
@@ -41,20 +58,33 @@ namespace CAP.Apps.PlaceComponentPlus
         {
             if (lb_OpenDocs.SelectedItem != null)
             {
-                string compName = lb_OpenDocs.SelectedItem.ToString();
+                AddinGlobal.PlaceCompFilePath = GetComponentByName(lb_OpenDocs.SelectedItem.ToString()).Filepath;
 
-                foreach (InvDoc item in OpenComps)
+                this.Close();
+                                
+            }            
+            
+        }
+
+
+        public InvDoc GetComponentByName(string compName)
+        {
+            InvDoc doc = null;
+
+            foreach (InvDoc item in OpenComps)
+            {
+                if (item.Name == compName)
                 {
-                    if (item.Name == compName)
-                    {
-                        AddinGlobal.PlaceCompFilePath = item.Filepath;
-                        this.Close();
-                        break;
-                    }
+                    doc = item;
                 }
             }
-            
-            
+
+            return doc;
+        }
+
+        private void lb_OpenDocs_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            pictureBox1.Image = GetComponentByName(lb_OpenDocs.SelectedItem.ToString()).Thumbnail;
         }
     }
 }

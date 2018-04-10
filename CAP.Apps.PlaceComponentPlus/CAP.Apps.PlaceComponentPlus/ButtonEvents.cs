@@ -29,7 +29,12 @@ namespace CAP.Apps.PlaceComponentPlus
             PlaceOpenCompUI frm = new PlaceOpenCompUI();
             frm.ShowDialog();
 
-            ApplicationTools.PlaceComponent(AddinGlobal.PlaceCompFilePath);
+            if (AddinGlobal.PlaceCompFilePath != null)
+            {
+                ApplicationTools.PlaceComponent(AddinGlobal.PlaceCompFilePath);
+                AddinGlobal.PlaceCompFilePath = null;
+            }
+                
 
         }
 

@@ -160,6 +160,12 @@
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\PCP 32x32.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\PCP32x32.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PreBuildEvent>

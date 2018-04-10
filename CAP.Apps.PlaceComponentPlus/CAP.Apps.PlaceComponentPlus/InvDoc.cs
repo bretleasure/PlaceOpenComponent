@@ -10,5 +10,6 @@ namespace CAP.Apps.PlaceComponentPlus
     {
         public string Name;
         public string Filepath;
+        public System.Drawing.Image Thumbnail;
     }
 }
