@@ -26,5 +26,7 @@ namespace CAP.Apps.PlaceComponentPlus
 
         public static string PlaceCompFilePath;
 
+        
+
     }
 }

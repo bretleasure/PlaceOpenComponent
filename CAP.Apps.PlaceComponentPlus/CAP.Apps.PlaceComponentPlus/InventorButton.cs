@@ -31,6 +31,7 @@ namespace CAP.Apps.PlaceComponentPlus
             {
                 LargeIconIPictureDisp = IconToPicture(LargeIcon);
                 SmallIconIpictureDisp = IconToPicture(SmallIcon);
+
             }
 
             oButtonDef = AddinGlobal.InventorApp.CommandManager.ControlDefinitions.AddButtonDefinition(DisplayName, InternalName, CommandTypesEnum.kEditMaskCmdType, null, DescriptionText, ToolTipText, SmallIconIpictureDisp, LargeIconIPictureDisp);

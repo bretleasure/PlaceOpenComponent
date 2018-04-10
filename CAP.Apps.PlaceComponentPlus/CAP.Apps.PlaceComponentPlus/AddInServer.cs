@@ -49,7 +49,7 @@ namespace CAP.Apps.PlaceComponentPlus
 
             try
             {
-                Icon icon1 = new Icon(this.GetType(), "Resources.capico.ico");
+                Icon icon1 = new Icon(this.GetType(), "Resources.PCP 32x32.ico");
                 Icon icon1_sm = new Icon(icon1, 16, 16);
                 InventorButton button1 = new InventorButton("Place Open Component", "cap_PlaceOpenComp", "Allows you to place a component that is open in Inventor into " +
                     "the current assemly.", "Place an opon component into this assembly", icon1, icon1_sm);
