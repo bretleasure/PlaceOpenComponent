@@ -38,13 +38,10 @@
             // 
             // lb_OpenDocs
             // 
-            this.lb_OpenDocs.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_OpenDocs.FormattingEnabled = true;
-            this.lb_OpenDocs.HorizontalScrollbar = true;
-            this.lb_OpenDocs.ItemHeight = 15;
             this.lb_OpenDocs.Location = new System.Drawing.Point(12, 43);
             this.lb_OpenDocs.Name = "lb_OpenDocs";
-            this.lb_OpenDocs.Size = new System.Drawing.Size(195, 199);
+            this.lb_OpenDocs.Size = new System.Drawing.Size(195, 147);
             this.lb_OpenDocs.TabIndex = 0;
             this.lb_OpenDocs.SelectedIndexChanged += new System.EventHandler(this.lb_OpenDocs_SelectedIndexChanged);
             this.lb_OpenDocs.DoubleClick += new System.EventHandler(this.btn_Place_Click);
@@ -52,9 +49,9 @@
             // btn_Place
             // 
             this.btn_Place.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_Place.Location = new System.Drawing.Point(213, 258);
+            this.btn_Place.Location = new System.Drawing.Point(213, 204);
             this.btn_Place.Name = "btn_Place";
-            this.btn_Place.Size = new System.Drawing.Size(199, 23);
+            this.btn_Place.Size = new System.Drawing.Size(147, 23);
             this.btn_Place.TabIndex = 1;
             this.btn_Place.Text = "Place in Assembly";
             this.btn_Place.UseVisualStyleBackColor = true;
@@ -74,7 +71,7 @@
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Location = new System.Drawing.Point(213, 43);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(199, 199);
+            this.pictureBox1.Size = new System.Drawing.Size(147, 147);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
@@ -83,7 +80,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(426, 293);
+            this.ClientSize = new System.Drawing.Size(374, 239);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_Place);

@@ -14,17 +14,17 @@ namespace CAP.Apps.PlaceComponentPlus
 
         static Inventor.Application InvApp = AddinGlobal.InventorApp;
 
-        static AssemblyDocument assyDoc;
+        //static AssemblyDocument assyDoc;
 
-        static ApplicationSettings oSettings;
+        //static ApplicationSettings oSettings;
 
         public static void Button1_Event()
         {
-            ////Check Entitlement
-            //if (!Tools.CheckForValidUser("CAP.Apps.PlaceComponentPlus", AddinGlobal.AppId))
-            //{       
-            //    return;
-            //}
+            //Check Entitlement
+            if (!Tools.CheckForValidUser("Place Component Plus", AddinGlobal.AppId))
+            {
+                return;
+            }
 
             PlaceOpenCompUI frm = new PlaceOpenCompUI();
             frm.ShowDialog();
@@ -34,7 +34,6 @@ namespace CAP.Apps.PlaceComponentPlus
                 ApplicationTools.PlaceComponent(AddinGlobal.PlaceCompFilePath);
                 AddinGlobal.PlaceCompFilePath = null;
             }
-                
 
         }
 
