@@ -19,6 +19,7 @@ namespace CAP.Apps.PlaceComponentPlus
 
         List<InvDoc> OpenComps;
 
+        string PlaceCompFilepath;
 
         private void PlaceComponentUI_Load(object sender, EventArgs e)
         {
@@ -38,7 +39,7 @@ namespace CAP.Apps.PlaceComponentPlus
                 //PictureBox oPB = new PictureBox();
                 //oPB.Image = item.Thumbnail;
                 //oPB.Size = new Size(150, 150);
-                //oPB.SizeMode = PictureBoxSizeMode.StretchImage;
+                //oPB.SizeMode = PictureBoxSizeMode.Zoom;
 
                 //Label oLbl = new Label();
                 //oLbl.Text = item.Name;
@@ -46,13 +47,10 @@ namespace CAP.Apps.PlaceComponentPlus
                 //oPanel.Controls.Add(oPB);
                 //oPanel.Controls.Add(oLbl);
 
-                //pnl_Files.Controls.Add(oPanel);
-
                 //lb_OpenDocs.Items.Add(oPanel);
 
                 lb_OpenDocs.Items.Add(item.Name);
 
-                
             }
         }
 

@@ -12,11 +12,11 @@ namespace CAP.Apps.PlaceComponentPlus
     {
         public static Inventor.Application InventorApp;
 
-        public static string AppFolder = Tools.GetAppFolder("CAP.Apps.PlaceComponentPlus");
+        public static string AppFolder = Tools.GetAppFolder("Place Component Plus");
 
-        public static string SettingsFile = Tools.GetHexString("CAP.Apps.PlaceComponentPlus Settings") + ".xml";
+        public static string SettingsFile = Tools.GetHexString("Place Component Plus Settings") + ".xml";
 
-        public static string AppId = "5865579890990954428";
+        public static string AppId = "1342749003339575521";
 
         public static ApplicationSettings AppSettings;
 
@@ -25,8 +25,7 @@ namespace CAP.Apps.PlaceComponentPlus
         public static string InternalPanelName = "3d3aeae0-1541-4a75-ad92-2f2196a29264";
 
         public static string PlaceCompFilePath;
-
-        
+       
 
     }
 }

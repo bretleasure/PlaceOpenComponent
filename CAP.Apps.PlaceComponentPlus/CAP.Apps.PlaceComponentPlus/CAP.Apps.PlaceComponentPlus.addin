@@ -2,8 +2,8 @@
   <!--Created for Autodesk Inventor Version 22.0-->
   <ClassId>{056800f8-36fe-407f-9fa9-098e17f4229e}</ClassId>
   <ClientId>{056800f8-36fe-407f-9fa9-098e17f4229e}</ClientId>
-  <DisplayName>CAP.Apps.PlaceComponentPlus</DisplayName>
-  <Description>CAP.Apps.PlaceComponentPlus Add-in by CAD Apps Plus</Description>
+  <DisplayName>CADAppsPlus_PlaceComonentPlus</DisplayName>
+  <Description>Place Component Plus Add-in by CAD Apps Plus</Description>
   <Assembly>CAP.Apps.PlaceComponentPlus.dll</Assembly>
   <LoadOnStartUp>1</LoadOnStartUp>
   <UserUnloadable>1</UserUnloadable>
