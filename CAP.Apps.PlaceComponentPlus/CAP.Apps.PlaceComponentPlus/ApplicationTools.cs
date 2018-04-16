@@ -48,16 +48,20 @@ namespace CAP.Apps.PlaceComponentPlus
                     case DocumentTypeEnum.kAssemblyDocumentObject:
                     case DocumentTypeEnum.kPartDocumentObject:
 
-                        if (vdocs[i].FullFileName != AddinGlobal.InventorApp.ActiveDocument.FullFileName)
+                        if (vdocs[i].FullFileName != AddinGlobal.InventorApp.ActiveDocument.FullFileName && vdocs[i].FullFileName != "")
                         {
                             InvDoc newcomp = new InvDoc();
                             newcomp.Name = vdocs[i].DisplayName;
                             newcomp.Filepath = vdocs[i].FullFileName;
 
+                            int GetThumbnailLoopCount = 0;
+
                             TryThumbnailAgain:
 
+                            GetThumbnailLoopCount++;
+
                             try
-                            {                                
+                            {                              
 
                                 long handle = 0;
                                 do
@@ -68,7 +72,35 @@ namespace CAP.Apps.PlaceComponentPlus
                                 } while (handle < 0);
                                 
                             }
-                            catch { goto TryThumbnailAgain; }
+                            catch
+                            {
+                                //Failed to get thumbnail
+
+                                if (GetThumbnailLoopCount < 20)
+                                {
+                                    goto TryThumbnailAgain;
+                                }
+                                else
+                                {
+                                    //Assign default image based on part type
+
+                                    switch (vdocs[i].DocumentType)
+                                    {
+                                        case DocumentTypeEnum.kAssemblyDocumentObject:
+                                            newcomp.Thumbnail = Properties.Resources.iam;
+                                            
+                                            break;
+                                        case DocumentTypeEnum.kPartDocumentObject:
+                                            newcomp.Thumbnail = Properties.Resources.ipt;
+                                            break;
+                                        default:
+                                            MessageBox.Show("unknown");
+                                            break;
+                                    }                                        
+
+                                }
+                                    
+                            }
 
                             docs.Add(newcomp);
                                                     

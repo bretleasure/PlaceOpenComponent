@@ -166,6 +166,10 @@
   <ItemGroup>
     <EmbeddedResource Include="Resources\PCP32x32.png" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\iam.png" />
+    <EmbeddedResource Include="Resources\ipt.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PreBuildEvent>
