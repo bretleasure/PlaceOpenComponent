@@ -2,9 +2,9 @@
   <!--Created for Autodesk Inventor Version 22.0-->
   <ClassId>{056800f8-36fe-407f-9fa9-098e17f4229e}</ClassId>
   <ClientId>{056800f8-36fe-407f-9fa9-098e17f4229e}</ClientId>
-  <DisplayName>CADAppsPlus_PlaceComponentPlus</DisplayName>
-  <Description>Place Component Plus Add-in by CAD Apps Plus</Description>
-  <Assembly>C:\Visual Studio Projects\CAD Apps Plus\Place Component Plus\CAP.Apps.PlaceComponentPlus\CAP.Apps.PlaceComponentPlus\bin\Debug\CAP.Apps.PlaceComponentPlus.dll</Assembly>
+  <DisplayName>BralucSolutions_PlaceComponentPlus</DisplayName>
+  <Description>Place Component Plus Add-in by Braluc Solutions</Description>
+  <Assembly>C:\Visual Studio Projects\Braluc Solutions\Place Component Plus\CAP.Apps.PlaceComponentPlus\CAP.Apps.PlaceComponentPlus\bin\Debug\CAP.Apps.PlaceComponentPlus.dll</Assembly>
   <LoadOnStartUp>1</LoadOnStartUp>
   <UserUnloadable>1</UserUnloadable>
   <Hidden>0</Hidden>
