@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2015
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlaceComponentPlus", "PlaceComponentPlus\PlaceComponentPlus.csproj", "{056800F8-36FE-407F-9FA9-098E17F4229E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlaceOpenComponent", "PlaceOpenComponent\PlaceOpenComponent.csproj", "{056800F8-36FE-407F-9FA9-098E17F4229E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

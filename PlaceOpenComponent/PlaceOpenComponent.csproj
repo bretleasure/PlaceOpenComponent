@@ -22,7 +22,7 @@
     <PackageReference Include="stdole" Version="16.9.31023.347" />
   </ItemGroup>
   <ItemGroup>
-    <None Update="PlaceComponentPlus.addin">
+    <None Update="PlaceOpenComponent.addin">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
