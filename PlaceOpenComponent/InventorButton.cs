@@ -8,7 +8,7 @@ using Inventor;
 using System.Windows.Forms;
 using stdole;
 
-namespace PlaceComponentPlus
+namespace PlaceOpenComponent
 {
     public class InventorButton
     {

@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Autodesk.Inventor.Interop, Version=25.0.0.0">
+      <HintPath>lib\Autodesk.Inventor.Interop.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\capico.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\iam.png" />
+    <EmbeddedResource Include="Resources\ipt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Place Component Plus.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="iAD.Utilities" Version="1.2.0" />
+    <PackageReference Include="stdole" Version="16.9.31023.347" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="PlaceOpenComponent.addin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>
