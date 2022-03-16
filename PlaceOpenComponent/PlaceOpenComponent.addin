@@ -4,7 +4,7 @@
   <ClientId>{056800f8-36fe-407f-9fa9-098e17f4229e}</ClientId>
   <DisplayName>Place Component Plus</DisplayName>
   <Description>Place Component Plus Add-in by iAutomate Design LLC</Description>
-  <Assembly>PlaceComponentPlus.dll</Assembly>
+  <Assembly>PlaceOpenComponent.dll</Assembly>
   <LoadOnStartUp>1</LoadOnStartUp>
   <UserUnloadable>1</UserUnloadable>
   <Hidden>0</Hidden>

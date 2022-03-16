@@ -7,7 +7,7 @@ using Microsoft.Win32;
 using System.Windows.Forms;
 using iAD.Utilities;
 
-namespace PlaceComponentPlus
+namespace PlaceOpenComponent
 {
     /// <summary>
     /// This is the primary AddIn Server class that implements the ApplicationAddInServer interface
@@ -65,7 +65,7 @@ namespace PlaceComponentPlus
                         Ribbon ribbon = uiMan.Ribbons["Assembly"];
                         RibbonTab tab = ribbon.RibbonTabs["id_TabAssemble"];
 
-                        RibbonPanel panel = tab.RibbonPanels["id_PanelA_AssembleComponent"]; //.Add("PlaceComponentPlus", AddinGlobal.InternalPanelName.ToString(), AddinGlobal.PanelGUID.ToString());
+                        RibbonPanel panel = tab.RibbonPanels["id_PanelA_AssembleComponent"]; //.Add("PlaceOpenComponent", AddinGlobal.InternalPanelName.ToString(), AddinGlobal.PanelGUID.ToString());
                         CommandControls controls = panel.CommandControls;
 
                         //controls.AddButton(button1.ButtonDef(), true, true);

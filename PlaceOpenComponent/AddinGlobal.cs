@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Inventor;
 using iAD.Utilities;
 
-namespace PlaceComponentPlus
+namespace PlaceOpenComponent
 {
     public class AddinGlobal
     {

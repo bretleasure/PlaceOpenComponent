@@ -8,7 +8,7 @@ using iAD.Utilities;
 using System.Windows.Forms;
 using System.Drawing;
 
-namespace PlaceComponentPlus
+namespace PlaceOpenComponent
 {
     public abstract class ApplicationTools
     {
