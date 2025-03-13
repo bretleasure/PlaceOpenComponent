@@ -1,0 +1,54 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net472</TargetFramework>
+        <LangVersion>latest</LangVersion>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <UseWindowsForms>true</UseWindowsForms>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <LocalizeTemplates>false</LocalizeTemplates>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Reference Include="Autodesk.Inventor.Interop">
+            <HintPath>lib\Autodesk.Inventor.Interop.dll</HintPath>
+        </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Inventor.InternalNames" Version="0.4.1"/>
+        <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="stdole" Version="17.13.40008"/>
+        <PackageReference Include="System.Resources.Extensions" Version="9.0.2"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Update="PlaceOpenComponent.addin">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+        <None Update="PlaceOpenComponent-debug.addin">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
+
+    <PropertyGroup>
+        <GenerateResourceUsePreserializedResources>true</GenerateResourceUsePreserializedResources>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <EmbeddedResource Include="Buttons\Assets\Default-Light.png"/>
+        <EmbeddedResource Include="Buttons\Assets\Default-Dark.png"/>
+        <None Remove="Buttons\Assets\logo.png" />
+        <EmbeddedResource Include="Buttons\Assets\logo.png" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Include="img\iam.png" />
+      <EmbeddedResource Include="img\ipt.png" />
+    </ItemGroup>
+</Project>
