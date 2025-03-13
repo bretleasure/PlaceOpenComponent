@@ -1,15 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PlaceOpenComponent
+﻿namespace PlaceOpenComponent
 {
     public class InvDoc
     {
-        public string Name;
-        public string Filepath;
-        public System.Drawing.Image Thumbnail;
+        public InvDoc(string name, string filePath, Image thumbnail)
+        {
+            FilePath = filePath;
+            Name = name;
+            Thumbnail = thumbnail;
+        }
+        public string Name { get; }
+        public string FilePath { get; }
+        public Image Thumbnail { get; }
     }
 }

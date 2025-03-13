@@ -1,6 +1,7 @@
 ﻿using Inventor;
+using Inventor.InternalNames;
 using Inventor.InternalNames.Ribbon;
-using Application = Inventor.Application;
+using PlaceOpenComponent.UI;
 
 namespace PlaceOpenComponent.Buttons
 {
@@ -8,14 +9,18 @@ namespace PlaceOpenComponent.Buttons
 	{
 		protected override void Execute(NameValueMap context, Inventor.Application inventor)
 		{
-			var form = new PlaceOpenCompUI();
+			var form = new PlaceOpenCompUI(inventor.GetOpenDocuments());
 			form.ShowDialog();
 
 			var path = form.SelectedComponentPath;
 
 			if (!string.IsNullOrWhiteSpace(path))
 			{
-				ApplicationTools.PlaceComponent(path);
+				var cmdMgr = inventor.CommandManager;
+
+				cmdMgr.PostPrivateEvent(PrivateEventTypeEnum.kFileNameEvent, path);
+
+				cmdMgr.ControlDefinitions[CommandNames.AssemblyPlaceComponentCmd].Execute2(true);
 			}
 		}
 
@@ -26,7 +31,7 @@ namespace PlaceOpenComponent.Buttons
 		protected override string GetRibbonPanelName() => AssemblyRibbonPanels.AssembleTab.Component;
 
 		internal override void Initialize()
-		{ 
+		{
 			_button = this.RibbonPanel.CommandControls["AssemblyPlaceSplit"].ChildControls.AddButton(Definition, UseLargeIcon, ShowText);
 		}
 

@@ -1,7 +1,4 @@
-﻿using System.Drawing;
-using System.Reflection;
-using System.Windows.Forms;
-using Inventor;
+﻿using Inventor;
 using IPictureDisp = Inventor.IPictureDisp;
 
 namespace PlaceOpenComponent.Buttons

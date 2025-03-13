@@ -32,7 +32,7 @@
             <CopyToOutputDirectory>Always</CopyToOutputDirectory>
         </None>
         <None Update="PlaceOpenComponent-debug.addin">
-          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+          <CopyToOutputDirectory>Never</CopyToOutputDirectory>
         </None>
     </ItemGroup>
 
@@ -50,5 +50,17 @@
     <ItemGroup>
       <EmbeddedResource Include="img\iam.png" />
       <EmbeddedResource Include="img\ipt.png" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Update="..\..\img\Place Component Plus.png">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+        <None Update="..\..\img\Ribbon.png">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+        <None Update="..\..\img\Window.png">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
     </ItemGroup>
 </Project>
