@@ -8,7 +8,8 @@ namespace PlaceOpenComponent
         {
             return inventor.Documents.VisibleDocuments
                 .Cast<Document>()
-                .Where(doc => doc.DocumentType == DocumentTypeEnum.kAssemblyDocumentObject || doc.DocumentType == DocumentTypeEnum.kPartDocumentObject)
+                .Where(doc => (doc.DocumentType == DocumentTypeEnum.kAssemblyDocumentObject || doc.DocumentType == DocumentTypeEnum.kPartDocumentObject) 
+                              && doc != inventor.ActiveDocument)
                 .Select(doc => new InvDoc(doc.DisplayName, doc.FullFileName, doc.GetThumbnail()))
                 .ToList();
         }
