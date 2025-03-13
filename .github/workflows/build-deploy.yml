@@ -45,16 +45,16 @@ jobs:
     - name: Build DotNet
       run: dotnet build -c Release
 
-    - name: Pack Projects
-      run: dotnet pack --output artifacts --configuration Release /p:PackageVersion=${{ steps.gitversion.outputs.nugetversion }}
+    # - name: Pack Projects
+    #   run: dotnet pack --output artifacts --configuration Release /p:PackageVersion=${{ steps.gitversion.outputs.nugetversion }}
 
-    - name: Publish NuGet Build Artifacts
-      uses: actions/upload-artifact@v4.3.4
-      with:
-        name: nuget
-        path: ./artifacts/*.nupkg
-        retention-days: 1
-        overwrite: true
+    # - name: Publish NuGet Build Artifacts
+    #   uses: actions/upload-artifact@v4.3.4
+    #   with:
+    #     name: nuget
+    #     path: ./artifacts/*.nupkg
+    #     retention-days: 1
+    #     overwrite: true
 
     - name: Create Addin Zip .NET 4.7.2
       uses: thedoctor0/zip-release@0.7.5
