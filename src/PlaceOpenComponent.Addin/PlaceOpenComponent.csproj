@@ -34,11 +34,10 @@
         <None Update="PlaceOpenComponent-debug.addin">
           <CopyToOutputDirectory>Never</CopyToOutputDirectory>
         </None>
+        <None Update="img\*.png">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
     </ItemGroup>
-
-    <PropertyGroup>
-        <GenerateResourceUsePreserializedResources>true</GenerateResourceUsePreserializedResources>
-    </PropertyGroup>
 
     <ItemGroup>
         <EmbeddedResource Include="Buttons\Assets\Default-Light.png"/>
@@ -50,17 +49,5 @@
     <ItemGroup>
       <EmbeddedResource Include="img\iam.png" />
       <EmbeddedResource Include="img\ipt.png" />
-    </ItemGroup>
-
-    <ItemGroup>
-        <None Update="..\..\img\Place Component Plus.png">
-            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-        </None>
-        <None Update="..\..\img\Ribbon.png">
-            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-        </None>
-        <None Update="..\..\img\Window.png">
-            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-        </None>
     </ItemGroup>
 </Project>
