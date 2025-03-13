@@ -1,0 +1,14 @@
+<Addin Type="Standard">
+  <!--Created for Autodesk Inventor Version 22.0-->
+  <ClassId>{4EFE2846-A06F-4D60-A50E-AD4AE51D8787}</ClassId>
+  <ClientId>{4EFE2846-A06F-4D60-A50E-AD4AE51D8787}</ClientId>
+  <DisplayName>PlaceOpenComponent</DisplayName>
+  <Description>PlaceOpenComponent Addin</Description>
+  <Assembly>PlaceOpenComponent.dll</Assembly>
+  <LoadOnStartUp>1</LoadOnStartUp>
+  <UserUnloadable>1</UserUnloadable>
+  <Hidden>0</Hidden>
+  <SupportedSoftwareVersionGreaterThan>19..</SupportedSoftwareVersionGreaterThan>
+  <DataVersion>1</DataVersion>
+  <UserInterfaceVersion>1</UserInterfaceVersion>
+</Addin>
