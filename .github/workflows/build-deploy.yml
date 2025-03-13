@@ -61,16 +61,16 @@ jobs:
       with:
         type: 'zip'
         directory: ./artifacts
-        path: ../src/SheetList.Addin/bin/release/net472/**
-        filename: SheetListAddin-net472-v${{ steps.gitversion.outputs.nugetversion }}.zip
+        path: ../src/PlaceOpenComponent.Addin/bin/release/net472/**
+        filename: PlaceOpenComponentAddin-net472-v${{ steps.gitversion.outputs.nugetversion }}.zip
         
     - name: Create Addin Zip .NET 8
       uses: thedoctor0/zip-release@0.7.5
       with:
         type: 'zip'
         directory: ./artifacts
-        path: ../src/SheetList.Addin/bin/release/net8.0-windows/**
-        filename: SheetListAddin-net8-v${{ steps.gitversion.outputs.nugetversion }}.zip
+        path: ../src/PlaceOpenComponent.Addin/bin/release/net8.0-windows/**
+        filename: PlaceOpenComponentAddin-net8-v${{ steps.gitversion.outputs.nugetversion }}.zip
 
     - name: Publish Addin Zips to Build Artifacts
       uses: actions/upload-artifact@v4.3.4
